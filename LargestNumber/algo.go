@@ -14,8 +14,7 @@ func largestNumber(nums []int) string {
 	}
 
 	sort.Slice(ss, func(i, j int) bool {
-		x, y := ss[i]+ss[j], ss[j]+ss[i]
-		return x < y
+		return ss[i]+ss[j] < ss[j]+ss[i]
 	})
 
 	result := ""
