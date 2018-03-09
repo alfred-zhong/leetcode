@@ -6,9 +6,8 @@ func reachNumber(target int) int {
 		return 0
 	}
 
-	t := target
-	if t < 0 {
-		t = -t
+	if target < 0 {
+		target = -target
 	}
 
 	k := 0
@@ -17,7 +16,7 @@ func reachNumber(target int) int {
 		k++
 		sum += k
 
-		if sum >= t && (sum-t)%2 == 0 {
+		if sum >= target && (sum-target)%2 == 0 {
 			break
 		}
 	}

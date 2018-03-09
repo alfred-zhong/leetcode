@@ -24,3 +24,12 @@ func Test_reachNumber(t *testing.T) {
 		})
 	}
 }
+
+func Benchmark_reachNumber(b *testing.B) {
+	count := 100000
+	for i := 0; i < b.N; i++ {
+		for i := 0; i < count; i++ {
+			reachNumber(i)
+		}
+	}
+}
