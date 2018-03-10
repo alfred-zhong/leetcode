@@ -1,5 +1,5 @@
 // https://leetcode.com/problems/single-element-in-a-sorted-array/description/
-package algo
+package a1
 
 func singleNonDuplicate(nums []int) int {
 	r := 0
